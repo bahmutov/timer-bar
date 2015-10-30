@@ -1,0 +1,30 @@
+{
+  "name": "timer-bar",
+  "version": "1.0.0",
+  "description": "Single code snippet to insert a progress bar into the page to finish in N seconds, useful for presentations",
+  "main": "timer-bar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bahmutov/timer-bar.git"
+  },
+  "keywords": [
+    "timer",
+    "time",
+    "progress",
+    "bar",
+    "presentation",
+    "slides",
+    "reveal.js",
+    "helper",
+    "utility"
+  ],
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bahmutov/timer-bar/issues"
+  },
+  "homepage": "https://github.com/bahmutov/timer-bar#readme"
+}

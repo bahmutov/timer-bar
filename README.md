@@ -12,7 +12,7 @@ Press "Enter" to start the timer. If the presentation already has a timer,
 just make sure both timers stay approximately in sync to finish your presentation
 right on time.
 
-![timer bar screenshot][timer-bar-screenshot.png]
+![timer bar screenshot](timer-bar-screenshot.png)
 
 [sample]: http://slides.com/bahmutov/turn-to-11#/
 

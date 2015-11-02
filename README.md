@@ -14,6 +14,9 @@ right on time.
 
 ![timer bar screenshot](timer-bar-screenshot.png)
 
+To better automate the timer bar init, just save it as a
+[Code Snippet](http://glebbahmutov.com/blog/chrome-dev-tools-code-snippets/)
+
 [sample]: http://slides.com/bahmutov/turn-to-11#/
 
 ### Small print

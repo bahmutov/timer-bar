@@ -1,7 +1,20 @@
 # timer-bar
 
-> Single code snippet to insert a progress bar into the page to finish in N seconds, 
+> Single code snippet to insert a progress bar into the page to finish in N seconds,
 > useful for presentations.
+
+Open any HTML based presentation, like [slides.com](http://slides.com/),
+[here is][sample] a presentation you can use to test. Start the presentation in
+full screen mode. Open DevTools console and paste the contents of
+[timer-bar.js](timer-bar.js). Change the last two arguments to the duration
+(in minutes) and progress bar color to whatever looks good on your presentation.
+Press "Enter" to start the timer. If the presentation already has a timer,
+just make sure both timers stay approximately in sync to finish your presentation
+right on time.
+
+![timer bar screenshot][timer-bar-screenshot.png]
+
+[sample]: http://slides.com/bahmutov/turn-to-11#/
 
 ### Small print
 

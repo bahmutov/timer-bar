@@ -1,4 +1,4 @@
-(function (timerDurationMinutes) {
+(function (timerDurationMinutes, barColor) {
   function toText(response) { return response.text(); }
 
   function loadScript(url) {
@@ -14,7 +14,7 @@
 
   function initTimer() {
     console.log('starting timer for %d minute(s)', timerDurationMinutes);
-    progressBars.init()
+    progressBars.init({ color: barColor })
       .timer(timerDurationMinutes * 60);
   }
 
@@ -25,4 +25,4 @@
     initTimer();
   }
 
-}(15 /* minute(s) */));
+}(15 /* minute(s) */, '#ff00ff' /* color */));

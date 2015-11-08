@@ -4,7 +4,8 @@
   "description": "Single code snippet to insert a progress bar into the page to finish in N seconds, useful for presentations",
   "main": "timer-bar.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "./node_modules/pre-git/node_modules/commitizen/bin/git-cz"
   },
   "repository": {
     "type": "git",
@@ -26,5 +27,20 @@
   "bugs": {
     "url": "https://github.com/bahmutov/timer-bar/issues"
   },
-  "homepage": "https://github.com/bahmutov/timer-bar#readme"
+  "homepage": "https://github.com/bahmutov/timer-bar",
+  "config": {
+    "pre-git": {
+      "commit-msg": "validate-commit-msg",
+      "pre-commit": [],
+      "pre-push": [],
+      "post-commit": [],
+      "post-merge": []
+    }
+  },
+  "czConfig": {
+    "path": "node_modules/pre-git/node_modules/cz-conventional-changelog"
+  },
+  "devDependencies": {
+    "pre-git": "1.2.0"
+  }
 }

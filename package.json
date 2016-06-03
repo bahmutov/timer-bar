@@ -30,17 +30,14 @@
   "homepage": "https://github.com/bahmutov/timer-bar",
   "config": {
     "pre-git": {
-      "commit-msg": "validate-commit-msg",
+      "commit-msg": "simple",
       "pre-commit": [],
       "pre-push": [],
       "post-commit": [],
       "post-merge": []
     }
   },
-  "czConfig": {
-    "path": "node_modules/pre-git/node_modules/cz-conventional-changelog"
-  },
   "devDependencies": {
-    "pre-git": "1.2.0"
+    "pre-git": "3.8.4"
   }
 }

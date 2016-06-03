@@ -12,6 +12,31 @@
     return loadScript(url);
   }
 
+  const TIMER_BAR_KEY_CODE = 84; // 't'
+  var isRunning = false; // TODO for pausing the timer bar
+
+  function onKey(event) {
+    console.log('event', event);
+    if (event.keyCode === TIMER_BAR_KEY_CODE) {
+      if (isRunning) {
+        console.log('pausing timer-bar not implemented yet');
+      } else {
+        console.log('starting timer-bar');
+        initTimer();
+        isRunning = true;
+      }
+    }
+  }
+  if (!window.__timerBarOnKey) {
+    window.__timerBarOnKey = onKey;
+  }
+
+  function registerKey() {
+    document.removeEventListener('keyup', window.__timerBarOnKey);
+    document.addEventListener('keyup', window.__timerBarOnKey);
+    console.log('Press "t" to start the timer-bar');
+  }
+
   function initTimer() {
     console.log('starting timer for %d minute(s)', timerDurationMinutes);
     var options = {
@@ -24,9 +49,9 @@
 
   if (typeof progressBars === 'undefined') {
     loadProgressBars()
-      .then(initTimer);
+      .then(registerKey);
   } else {
-    initTimer();
+    registerKey();
   }
 
-}(15 /* minute(s) */, '#ff00ff' /* color */, 4 /* height pixels */));
+}(45 /* minute(s) */, '#ff00ff' /* color */, 4 /* height pixels */));

@@ -12,7 +12,9 @@ Open any HTML based presentation, like [slides.com](http://slides.com/),
 full screen mode. Open DevTools console and paste the contents of
 [timer-bar.js](timer-bar.js). Change the last two arguments to the duration
 (in minutes) and progress bar color to whatever looks good on your presentation.
-Press "Enter" to start the timer. If the presentation already has a timer,
+Run the script. The `timer-bar` code is ready.
+
+Press "t" to start the timer. If the presentation already has a timer,
 just make sure both timers stay approximately in sync to finish your presentation
 right on time.
 

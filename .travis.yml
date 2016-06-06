@@ -10,7 +10,7 @@ node_js:
 before_script:
   - npm prune
 script:
-  - npm run lint
+  - npm test
 after_success:
   - npm run semantic-release
 branches:

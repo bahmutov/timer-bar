@@ -1,4 +1,4 @@
-;(function (timerDurationMinutes, barColor, height) {
+;(function initTimerBar ({ timerDurationMinutes, barColor, height }) {
   function toText (response) { return response.text() }
 
   function loadScript (url) {
@@ -54,4 +54,8 @@
   } else {
     registerKey()
   }
-}(45 /* minute(s) */, '#ff00ff' /* color */, 4 /* height pixels */))
+}({
+  timerDurationMinutes: 45,
+  barColor: '#ff00ff',
+  height: 4
+}))

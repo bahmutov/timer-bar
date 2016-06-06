@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 0",
     "lint": "standard --verbose *.js",
     "format": "standard-format -w *.js",
-    "pretest": "npm run format && npm run lint"
+    "pretest": "npm run format && npm run lint",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",

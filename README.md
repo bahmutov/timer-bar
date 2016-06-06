@@ -3,6 +3,10 @@
 > Single code snippet to insert a progress bar into the page to finish in N seconds,
 > useful for presentations.
 
+[![Build Status][build]][link]
+[build]: https://travis-ci.org/bahmutov/timer-bar.svg?branch=master
+[link]: https://travis-ci.org/bahmutov/timer-bar
+
 Open any HTML based presentation, like [slides.com](http://slides.com/),
 [here is][sample] a presentation you can use to test. Start the presentation in
 full screen mode. Open DevTools console and paste the contents of

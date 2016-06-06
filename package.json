@@ -33,7 +33,7 @@
   "config": {
     "pre-git": {
       "commit-msg": "simple",
-      "pre-commit": [],
+      "pre-commit": ["npm test"],
       "pre-push": [],
       "post-commit": [],
       "post-merge": []

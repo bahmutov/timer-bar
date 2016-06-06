@@ -1,10 +1,13 @@
 {
   "name": "timer-bar",
-  "version": "1.2.0",
+  "version": "0.0.0-semantic-release",
   "description": "Single code snippet to insert a progress bar into the page to finish in N seconds, useful for presentations",
   "main": "timer-bar.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "lint": "standard --verbose *.js",
+    "format": "standard-format -w *.js",
+    "pretest": "npm run format && npm run lint"
   },
   "repository": {
     "type": "git",
@@ -37,6 +40,9 @@
     }
   },
   "devDependencies": {
-    "pre-git": "3.8.4"
+    "pre-git": "3.8.4",
+    "semantic-release": "^4.3.5",
+    "standard": "^7.1.2",
+    "standard-format": "^2.2.1"
   }
 }

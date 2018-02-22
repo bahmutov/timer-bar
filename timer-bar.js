@@ -1,4 +1,4 @@
-;(function initTimerBar ({ timerDurationMinutes, barColor, height }) {
+;(function initTimerBar ({ timerDurationMinutes, barColor, height, zindex, selector }) {
   function toText (response) { return response.text() }
 
   function loadScript (url) {
@@ -42,7 +42,9 @@
     console.log('starting timer for %d minute(s)', timerDurationMinutes)
     var options = {
       color: barColor,
-      height: height
+      height: height,
+      zindex: zindex,
+      selector: selector
     }
     window.progressBars.init(options)
       .timer(timerDurationMinutes * 60)
@@ -57,5 +59,9 @@
 }({
   timerDurationMinutes: 45,
   barColor: '#ff00ff',
-  height: 4
+  height: 4,
+  zindex: 1000
+// use selector for specific cases,
+// for example when adding to Reveal presentations
+// use selector: ".reveal-viewport"
 }))
